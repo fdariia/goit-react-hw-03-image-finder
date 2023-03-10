@@ -63,7 +63,7 @@ class ImageGallery extends Component {
     const { isLoading, hits, page, totalHits, showModal, largeImageURL } =
       this.state;
     return (
-      <div>
+      <>
         {isLoading && <Loader />}
         <ul className={css.imageGallery}>
           {hits.map(({ id, webformatURL, tags, largeImageURL }) => (
@@ -88,7 +88,7 @@ class ImageGallery extends Component {
             <img src={largeImageURL} alt="" />
           </Modal>
         )}
-      </div>
+      </>
     );
   }
 }
