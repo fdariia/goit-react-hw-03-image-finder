@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import css from './App.module.css';
 import Seachbar from './Searchbar';
 import ImageGallery from './ImageGallery/ImageGallery';
 
@@ -21,7 +22,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className={css.app}>
         <Seachbar onSubmit={this.handleFormSubmit} />
         <ImageGallery query={this.state.query} />
       </div>
