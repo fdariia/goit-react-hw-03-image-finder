@@ -1,5 +1,4 @@
 import { Component } from 'react';
-
 import Seachbar from './Searchbar';
 import ImageGallery from './ImageGallery/ImageGallery';
 
@@ -24,7 +23,7 @@ class App extends Component {
     return (
       <div>
         <Seachbar onSubmit={this.handleFormSubmit} />
-        <ImageGallery query={this.state.query}/>
+        <ImageGallery query={this.state.query} />
       </div>
     );
   }
