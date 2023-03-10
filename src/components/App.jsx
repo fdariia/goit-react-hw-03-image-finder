@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import '../index.css';
-import Seachbar from './Searchbar';
+import Searchbar from './Searchbar';
 import ImageGallery from './ImageGallery/ImageGallery';
 
 class App extends Component {
@@ -15,7 +15,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Seachbar onSubmit={this.handleFormSubmit} />
+        <Searchbar onSubmit={this.handleFormSubmit} />
         <ImageGallery query={this.state.query} />
       </div>
     );
